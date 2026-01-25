@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Dominix</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#135bec",
+                "background-light": "#f6f6f8",
+                "background-dark": "#101622",
+              },
+              fontFamily: {
+                "display": ["Manrope", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full max-w-screen-xl mx-auto flex-col bg-white dark:bg-background-dark overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800 relative">
+<div class="flex items-center p-4 justify-between max-w-screen-xl mx-auto">
+<div class="flex items-center gap-2">
+<a href="../index.html" class="flex items-center gap-2">
+<div class="bg-primary text-white p-1 rounded">
+<span class="material-symbols-outlined block text-2xl">architecture</span>
+</div>
+<h2 class="text-[#111318] dark:text-white text-xl font-extrabold leading-tight tracking-tight">Dominix</h2>
+</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#111318] dark:text-white p-2">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<button id="menu-toggle" class="text-[#111318] dark:text-white p-2">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+<!-- Mobile Menu Dropdown -->
+<div id="mobile-menu" class="hidden absolute top-full right-0 z-50 bg-white dark:bg-background-dark border-b border-gray-100 dark:border-gray-800 shadow-lg rounded-b-lg min-w-[200px]">
+<nav class="flex flex-col py-2">
+<a href="../about_dominix/code.html" class="text-[#111318] dark:text-white text-base font-bold py-3 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">About</a>
+<a href="../selected_work_portfolio/code.html" class="text-[#111318] dark:text-white text-base font-bold py-3 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">Work</a>
+<a href="../dominix_offerings/code.html" class="text-[#111318] dark:text-white text-base font-bold py-3 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">Services</a>
+<a href="../dominix_featured_insights_blog/code.html" class="text-[#111318] dark:text-white text-base font-bold py-3 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">Blog</a>
+<a href="../contact_dominix/code.html" class="text-[#111318] dark:text-white text-base font-bold py-3 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">Contact</a>
+</nav>
+</div>
+</div>
+</header>
+<!-- HeadlineText -->
+<section class="px-4 pt-6 pb-2">
+<h1 class="text-[#111318] dark:text-white tracking-tight text-[36px] font-extrabold leading-tight">Let's Talk</h1>
+</section>
+<!-- BodyText -->
+<section class="px-4">
+<p class="text-[#111318] dark:text-gray-300 text-base font-normal leading-normal pb-6">Ready to transform your brand? Book a discovery session below and we'll be in touch within 24 hours.</p>
+</section>
+<!-- Contact Form -->
+<form class="flex flex-col gap-1">
+<!-- TextField: Name -->
+<div class="flex flex-wrap items-end gap-4 px-4 py-2">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111318] dark:text-white text-sm font-semibold leading-normal pb-2">Full Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 rounded-lg text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-[#616f89] p-[15px] text-base font-normal" placeholder="John Doe" type="text"/>
+</label>
+</div>
+<!-- TextField: Email -->
+<div class="flex flex-wrap items-end gap-4 px-4 py-2">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111318] dark:text-white text-sm font-semibold leading-normal pb-2">Email Address</p>
+<input class="form-input flex w-full min-w-0 flex-1 rounded-lg text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-[#616f89] p-[15px] text-base font-normal" placeholder="john@example.com" type="email"/>
+</label>
+</div>
+<!-- TextField: Company -->
+<div class="flex flex-wrap items-end gap-4 px-4 py-2">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111318] dark:text-white text-sm font-semibold leading-normal pb-2">Company</p>
+<input class="form-input flex w-full min-w-0 flex-1 rounded-lg text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-[#616f89] p-[15px] text-base font-normal" placeholder="Acme Corp" type="text"/>
+</label>
+</div>
+<!-- Text Area for Message -->
+<div class="flex flex-wrap items-end gap-4 px-4 py-2">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111318] dark:text-white text-sm font-semibold leading-normal pb-2">Tell us about your project</p>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 rounded-lg text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary placeholder:text-[#616f89] p-[15px] text-base font-normal resize-none" placeholder="How can we help you grow?" rows="4"></textarea>
+</label>
+</div>
+<!-- CTA Button -->
+<div class="px-4 py-6">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl transition-colors text-lg" type="submit">
+                    Schedule Discovery Session
+                </button>
+</div>
+</form>
+<!-- Divider -->
+<div class="px-4 py-4">
+<hr class="border-gray-100 dark:border-gray-800"/>
+</div>
+<!-- Office Locations & Direct Contact -->
+<section class="px-4 pb-12">
+<h3 class="text-[#111318] dark:text-white text-xl font-bold mb-4">Our Studios</h3>
+<div class="space-y-6">
+<!-- Location 1 -->
+<div class="flex gap-4">
+<div class="w-20 h-20 rounded-lg overflow-hidden shrink-0 bg-gray-100">
+<img alt="London Studio" class="w-full h-full object-cover" data-alt="Modern office building in London" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-dtGkize3l88-37cNeQXUKEPgzU_NiCqO1HQx1CDAO-R5xBvN2Fl-XSl82o-LBQkSepXyUkVM-QvqJRPgBawfKJUb0E3FTlXh620XMdb3yROZzblmnW0dF1kvX5s3rr65CraJ0ehdSqZXukwIpI8NeFlkXwd0NK9SzWscqwpuGTEPDJWLnlsPHCuxlcOE7utlT_du5uAXVe6NG3HZAtilH9Ez6qOZNdnZKsEEwGCakhSPTIdQ8xyWV1WTxSupCHaWRtLRTKwnecQ"/>
+</div>
+<div>
+<h4 class="font-bold text-[#111318] dark:text-white">London</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400">124 Shoreditch High St<br/>London, E1 6JE, UK</p>
+<p class="text-primary text-sm font-semibold mt-1">Get Directions</p>
+</div>
+</div>
+<!-- Location 2 -->
+<div class="flex gap-4">
+<div class="w-20 h-20 rounded-lg overflow-hidden shrink-0 bg-gray-100">
+<img alt="New York Studio" class="w-full h-full object-cover" data-alt="Skyscraper in New York City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJJ585AcS2m9vA5UXwaKQX5RWOC2kPaPrefS-dH0Xcjo958_k2oFYX3RvTtvoIzHBHdBoTT1tNJc_ed0a3P8UQ1SMgYNjQV2_6Tavwo0VF6MZShJbDSRpn_y7wG2Lu4way5Km66UY0NyCNnrzZQkR3roX7qTiYqDful2AUKP1iQC1CHR5qYJKZxb3c61EAS7sO_d2_m7LLlfichLE7FWzJjJFemqd_eFm2Y5F6dNq9AZitQFo5lvQE1AzDF4lZ7lY2aEoKDlBOVN8"/>
+</div>
+<div>
+<h4 class="font-bold text-[#111318] dark:text-white">New York</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400">85 Broad Street<br/>New York, NY 10004, USA</p>
+<p class="text-primary text-sm font-semibold mt-1">Get Directions</p>
+</div>
+</div>
+</div>
+<!-- Direct Contact -->
+<div class="mt-10 bg-background-light dark:bg-gray-800/50 p-6 rounded-xl">
+<p class="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-4">Direct Reach</p>
+<div class="space-y-4">
+<a class="flex items-center gap-3 text-[#111318] dark:text-white group" href="mailto:hello@dominix.design">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="font-medium group-hover:underline">hello@dominix.design</span>
+</a>
+<a class="flex items-center gap-3 text-[#111318] dark:text-white group" href="tel:+15550000000">
+<span class="material-symbols-outlined text-primary">phone_iphone</span>
+<span class="font-medium group-hover:underline">+1 (555) 000-0000</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark py-12 px-6 border-t border-gray-100 dark:border-gray-800 mt-12">
+<div class="max-w-screen-xl mx-auto flex flex-col items-center gap-8">
+<div class="flex items-center gap-2">
+<div class="bg-primary text-white p-1 rounded">
+<span class="material-symbols-outlined block text-xl">architecture</span>
+</div>
+<h2 class="text-[#111318] dark:text-white text-lg font-extrabold">Dominix</h2>
+</div>
+<nav class="flex flex-wrap justify-center gap-6 text-sm font-bold text-gray-500 dark:text-gray-400">
+<a href="../about_dominix/code.html">About</a>
+<a href="../selected_work_portfolio/code.html">Work</a>
+<a href="../dominix_offerings/code.html">Services</a>
+<a href="../dominix_featured_insights_blog/code.html">Blog</a>
+<a href="../contact_dominix/code.html">Contact</a>
+</nav>
+<div class="flex gap-6 text-gray-400">
+<span class="material-symbols-outlined">brand_family</span>
+<span class="material-symbols-outlined">grid_view</span>
+<span class="material-symbols-outlined">alternate_email</span>
+</div>
+<p class="text-xs text-gray-400 text-center">
+                © 2026 Dominix Inc. All rights reserved.
+            </p>
+</div>
+</footer>
+</div>
+<script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+            
+            // Close menu when clicking on a link
+            const menuLinks = mobileMenu.querySelectorAll('nav a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+</body></html>
