@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dominix | Selected Work Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#135bec",
+                "background-light": "#f6f6f8",
+                "background-dark": "#101622",
+              },
+              fontFamily: {
+                "display": ["Manrope"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111318] dark:text-white transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden max-w-screen-xl mx-auto bg-white dark:bg-background-dark">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800 relative">
+<div class="flex items-center p-4 justify-between max-w-screen-xl mx-auto">
+<div class="flex items-center gap-2">
+<a href="../index.html" class="flex items-center gap-2">
+<div class="bg-primary text-white p-1 rounded">
+<span class="material-symbols-outlined block text-2xl">architecture</span>
+</div>
+<h2 class="text-[#111318] dark:text-white text-xl font-extrabold leading-tight tracking-tight">Dominix</h2>
+</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#111318] dark:text-white p-2">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<button id="menu-toggle" class="text-[#111318] dark:text-white p-2">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+<!-- Mobile Menu Dropdown -->
+<div id="mobile-menu" class="hidden absolute top-full right-0 z-50 bg-white dark:bg-background-dark border-b border-gray-100 dark:border-gray-800 shadow-lg rounded-b-lg min-w-[200px]">
+<nav class="flex flex-col py-2">
+<a href="../about_dominix/code.html" class="text-[#111318] dark:text-white text-base font-bold py-3 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">About</a>
+<a href="../selected_work_portfolio/code.html" class="text-[#111318] dark:text-white text-base font-bold py-3 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">Work</a>
+<a href="../dominix_offerings/code.html" class="text-[#111318] dark:text-white text-base font-bold py-3 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">Services</a>
+<a href="../dominix_featured_insights_blog/code.html" class="text-[#111318] dark:text-white text-base font-bold py-3 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">Blog</a>
+<a href="../contact_dominix/code.html" class="text-[#111318] dark:text-white text-base font-bold py-3 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">Contact</a>
+</nav>
+</div>
+</header>
+<!-- Section Title -->
+<div class="px-4 pt-2">
+<h1 class="text-[#111318] dark:text-white text-3xl font-extrabold tracking-tight">Selected Work</h1>
+<p class="text-[#616f89] dark:text-gray-400 text-sm mt-1">Strategy &amp; Experience Design Portfolio</p>
+</div>
+<!-- Chips / Filter Bar -->
+<div class="flex gap-3 p-4 overflow-x-auto no-scrollbar">
+<button class="filter-btn flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary px-6 cursor-pointer" data-filter="all">
+<p class="text-white text-sm font-semibold leading-normal">All</p>
+</button>
+<button class="filter-btn flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-100 dark:bg-white/10 px-6 border border-transparent hover:border-primary/30 transition-colors cursor-pointer" data-filter="branding">
+<p class="text-[#111318] dark:text-white text-sm font-medium leading-normal">Branding</p>
+</button>
+<button class="filter-btn flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-100 dark:bg-white/10 px-6 border border-transparent hover:border-primary/30 transition-colors cursor-pointer" data-filter="digital">
+<p class="text-[#111318] dark:text-white text-sm font-medium leading-normal">Digital Transformation</p>
+</button>
+<button class="filter-btn flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-100 dark:bg-white/10 px-6 border border-transparent hover:border-primary/30 transition-colors cursor-pointer" data-filter="platforms">
+<p class="text-[#111318] dark:text-white text-sm font-medium leading-normal">Platforms</p>
+</button>
+</div>
+</header>
+<main class="flex-1 pb-20">
+<!-- Featured Case Study (Card) -->
+<div class="p-4 pt-0">
+<a href="../case_study:_mercedes_gtls/code.html" class="group relative flex flex-col items-stretch justify-start rounded-xl overflow-hidden border border-gray-100 dark:border-white/5 bg-white dark:bg-white/5 shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover relative" data-alt="High-end luxury car steering wheel close up" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXMM3-1SQwiAbpgLpgvgaSbAeyBp1wDz6hmY_TjI2PCKr9q0rxDppA3pQ2qYAG_Ij8ZbwSSMlGRAuvg5V-vOmr1ICad2hUoIXAV4QSZlz5c5JLPZcP9d7MubTYUPbMLrXuXSAoS2QCRh-tftjq4qthJGNWjxCcPZnEs3Pnt3YZtr10u6hPgV8_wRbrbdaWSPulYFIBdKXybgl0oWYWfP3pUuE38UEc8Tv6ctr_4F-O0U-tHevgOo-qtmmmBQTnMooXvxqsGgWZZts");'>
+<div class="absolute top-4 left-4 bg-primary/90 text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Featured</div>
+</div>
+<div class="flex w-full flex-col items-stretch justify-center gap-1 p-4">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-[#616f89] dark:text-primary text-xs font-bold uppercase tracking-wider">Automotive Strategy</p>
+<p class="text-[#111318] dark:text-white text-xl font-extrabold leading-tight tracking-tight mt-1">Mercedes-Benz Global</p>
+</div>
+<span class="material-symbols-outlined text-primary">arrow_outward</span>
+</div>
+<div class="flex items-center gap-3 mt-2 justify-between">
+<p class="text-[#616f89] dark:text-gray-400 text-sm font-normal leading-relaxed">Redefining the digital luxury experience for the next generation of electric mobility.</p>
+</div>
+</div>
+</a>
+</div>
+<!-- SectionHeader -->
+<div class="flex items-center justify-between px-4 pt-4">
+<h3 class="text-[#111318] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Strategic Projects</h3>
+<span class="text-primary text-xs font-bold uppercase tracking-widest">View Grid</span>
+</div>
+<!-- ImageGrid (Masonry-like) -->
+<div class="grid grid-cols-2 gap-3 p-4">
+<!-- Branding Project -->
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/4] relative overflow-hidden" data-category="branding" data-alt="Minimalist pharmaceutical packaging design" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3whvKnIOs3af8wqXEZymcSXDfEFE_EzUHclk1Q4N6KoaKYnTBONQse6vBi2PJXvmAfWRFNeVO1DQfck77lJttU6BOZ8WL4cvf8VECQIydVZbFd8EP5dL8U_CbUe6uEZeT5FpiBl4ACFyo9xadheHSkkicZvfoCY31POBkdDgfGG2HTJmr9lOCQdPVX7AAk7gF5oUHrD3O2dF-1dGcB9hk91TfaZWASxG5cFrZN4WjasIZukBXGkJCRPKr7Kd-IN0RLr-KuyY1Vyo");'>
+<div class="z-10">
+<p class="text-primary text-[10px] font-bold uppercase mb-1">Healthcare</p>
+<p class="text-white text-base font-bold leading-tight line-clamp-2">Johnson &amp; Johnson</p>
+</div>
+</div>
+<!-- Digital Project -->
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/5] relative overflow-hidden" data-category="digital" data-alt="Entrepreneur working on a digital tablet in a bright office" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDc0XG8TiwaGWziHMjOktOKPcfSWeytKL_r0Y9j_-1IPMyRyx7kRm2SgF-pYmhHkZmsNwJvIISfSo2W2D72pPLfEWdbmtx-SoleqpCl2k0jLNFyRfTIpkM0nkew39QEzdDD8y0rNVTE-d8-BSjW2UjOe5VYiYiKPRZN36kUlGqiLECGKkRVQGYdX4XM5R-U1L6Bk8_i44K8opJ1-4Qzf2gaEZm3D9eu0pj6a6bgMilx2saAY5kVtbQAR2f4wTr5Rf1hoH69lDZFS34");'>
+<div class="z-10">
+<p class="text-primary text-[10px] font-bold uppercase mb-1">Non-Profit</p>
+<p class="text-white text-base font-bold leading-tight line-clamp-2">deAsra Foundation</p>
+</div>
+</div>
+<!-- Platform Project -->
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/5] -mt-16 relative overflow-hidden" data-category="platforms" data-alt="Abstract futuristic blue data visualization interface" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDO3a6SuW61nnDN6lktuafrrKhhrDmZsu41Tk3upCXjNBRhniwz198OaTUE586dairoPx3AEWcq5WehvY1hyG-IAE-gPk6oYjEr6azd0eNZzl7dKzQEZqkxkDoRcJE5KZ0uSfREs1cN7ilJY_hwCytnhuFy2Jrsa7Bx_rcKwbopUGPphnsGxoT1Refm25ve73m_oxdmRGbhMwaHm3VBEkuy60W4LTu6pxGY9tSSRlUftBlIFiy9tBy652atDbxC3wTsIPQUt0-bAw4");'>
+<div class="z-10">
+<p class="text-primary text-[10px] font-bold uppercase mb-1">Tech Ecosystem</p>
+<p class="text-white text-base font-bold leading-tight line-clamp-2">Internal Platforms</p>
+</div>
+</div>
+<!-- Branding Project 2 -->
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/4] relative overflow-hidden" data-category="branding" data-alt="Modern geometric corporate logo on a building facade" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDH1tjJcVKkvHHdh2q8AqjgIzuRchBE6LTrQ8WroU0Eh0Kb116vYgp4P5yglP6Fy_gigtBysw6jRNb_C6-YzjrwJWdVpt2Ghmdj_0qIOquwhO9gSPuJ9_HFi314nWzNj9_iFX3E1P8zfCwpuJbLqVRFIQbg7vktbTb2F1HTOKRqMtH9xZEGoJy0N4CxqHMdOka6T84mxosiN5M7Cw9b_x30XyWDMJjHwvB04hDtLNAJc1gaC4S4V50Gw-GDWyRkPM-46MTC6DtvaL8");'>
+<div class="z-10">
+<p class="text-primary text-[10px] font-bold uppercase mb-1">Real Estate</p>
+<p class="text-white text-base font-bold leading-tight line-clamp-2">Nexgen Spaces</p>
+</div>
+</div>
+</div>
+<!-- Bottom CTA -->
+<div class="p-6 mx-4 mb-6 rounded-2xl bg-[#111318] dark:bg-primary/20 text-center">
+<h4 class="text-white text-xl font-bold mb-2">Have a project in mind?</h4>
+<p class="text-gray-400 text-sm mb-4">Let's build something extraordinary together.</p>
+<a href="../contact_dominix/code.html" class="bg-primary text-white font-bold py-3 px-8 rounded-full w-full inline-block text-center">Start a Conversation</a>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark py-12 px-6 border-t border-gray-100 dark:border-gray-800 mt-20">
+<div class="max-w-screen-xl mx-auto flex flex-col items-center gap-8">
+<div class="flex items-center gap-2">
+<div class="bg-primary text-white p-1 rounded">
+<span class="material-symbols-outlined block text-xl">architecture</span>
+</div>
+<h2 class="text-[#111318] dark:text-white text-lg font-extrabold">Dominix</h2>
+</div>
+<nav class="flex flex-wrap justify-center gap-6 text-sm font-bold text-gray-500 dark:text-gray-400">
+<a href="../about_dominix/code.html">About</a>
+<a href="../selected_work_portfolio/code.html">Work</a>
+<a href="../dominix_offerings/code.html">Services</a>
+<a href="../dominix_featured_insights_blog/code.html">Blog</a>
+<a href="../contact_dominix/code.html">Contact</a>
+</nav>
+<div class="flex gap-6 text-gray-400">
+<span class="material-symbols-outlined">brand_family</span>
+<span class="material-symbols-outlined">grid_view</span>
+<span class="material-symbols-outlined">alternate_email</span>
+</div>
+<p class="text-xs text-gray-400 text-center">
+                © 2026 Dominix Inc. All rights reserved.
+            </p>
+</div>
+</footer>
+</div>
+<script>
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('[data-category]');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-primary', 'text-white');
+                    btn.classList.add('bg-gray-100', 'dark:bg-white/10', 'text-[#111318]', 'dark:text-white');
+                });
+                button.classList.remove('bg-gray-100', 'dark:bg-white/10', 'text-[#111318]', 'dark:text-white');
+                button.classList.add('bg-primary', 'text-white');
+                
+                // Filter projects
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Mobile menu functionality
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+            
+            // Close menu when clicking on a link
+            const menuLinks = mobileMenu.querySelectorAll('nav a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+</body></html>
